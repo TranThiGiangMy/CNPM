@@ -1,0 +1,11 @@
+{% extends 'admin/master.html' %}
+
+{% block body %}
+
+{% if current_user.is_authenticated %}
+
+<h1 class="text-center text-info">TRANG CHỦ QUẢN TRỊ CHUYẾN BAY</h1>
+<h3>Chào <span class="text-danger">{{ current_user.username }}</span>!!! </h3>
+
+{% endif %}
+{% endblock %}
